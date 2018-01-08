@@ -1,0 +1,30 @@
+{
+    "name": "volumnet/bitrix24",
+    "description": "VolumNet Bitrix24 Webhooks implementation",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^5.3"
+    },
+    "version": "1.0.0",
+    "license": "GPL v3",
+    "authors": [
+        {
+            "name": "Alex V. Surnin",
+            "email": "info@volumnet.ru"
+        }
+    ],
+    "scripts": {
+        "test": [
+            "CHCP 65001",
+            "phpunit --coverage-html tests/coverage"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "VolumNet\\Bitrix24\\": "src/"
+        }
+    },
+    "require": {
+        "volumnet/curl": "^1.0"
+    }
+}
