@@ -5,8 +5,8 @@
     "require-dev": {
         "phpunit/phpunit": "^5.3"
     },
-    "version": "1.0.0",
-    "license": "GPL v3",
+    "version": "1.0.1",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Alex V. Surnin",
