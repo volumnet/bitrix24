@@ -2,7 +2,7 @@
 
 <phpunit colors="true" bootstrap="tests/bootstrap.php">
   <testsuites>
-    <testsuite name="volumnet/curl Test Suite">
+    <testsuite name="volumnet/bitrix24 Test Suite">
       <directory>tests/src/</directory>
     </testsuite>
   </testsuites>
