@@ -3,3 +3,4 @@ coverage
 components
 config.php
 bitrix24.config.php 
+composer.lock
