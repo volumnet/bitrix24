@@ -23,11 +23,11 @@ class Webhook
     /**
      * Class constructor
      * @param string $domain Domain name, including protocol (i.e. https://domain.bitrix24.ru)
-     * @param string $webhook Webhook ID
+     * @param string $webhook Webhook path (i.e. /rest/1/someWebhookId/)
      */
     public function __construct($domain, $webhook)
     {
-        $this->url = $domain . '/rest/1/' . $webhook . '/';
+        $this->url = $domain . $webhook;
         $this->test = $test;
     }
 

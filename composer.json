@@ -2,8 +2,13 @@
     "name": "volumnet/bitrix24",
     "description": "VolumNet Bitrix24 Webhooks implementation",
     "type": "library",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require-dev": {
-        "phpunit/phpunit": "^5.3"
+        "phpunit/phpunit": "^5.3",
+        "volumnet/raas.kernel": "^4.2.14",
+        "volumnet/raas.cms": "^4.2.17",
+        "volumnet/raas.cms.shop": "^4.2.7"
     },
     "version": "1.0.3",
     "license": "GPL-3.0-or-later",
@@ -26,5 +31,11 @@
     },
     "require": {
         "volumnet/curl": "^1.0"
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }

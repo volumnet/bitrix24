@@ -28,7 +28,7 @@ class WebhookTest extends PHPUnit_Framework_TestCase
      */
     public function testMethodInvalidJson()
     {
-        $wh = new Webhook('http://httpbin.org', 'abc');
+        $wh = new Webhook('http://lab', '/abc/');
         $wh->method('someMethod', array());
     }
 
@@ -41,7 +41,7 @@ class WebhookTest extends PHPUnit_Framework_TestCase
     public function testMethodInvalidWebhook()
     {
         $b24c = $GLOBALS['bitrix24'];
-        $wh = new Webhook($b24c['domain'], 'abc');
+        $wh = new Webhook($b24c['domain'], '/rest/1/abc/');
         $wh->method('crm.lead.get', array());
     }
 
@@ -54,7 +54,7 @@ class WebhookTest extends PHPUnit_Framework_TestCase
     public function testMethodInvalidMethod()
     {
         $b24c = $GLOBALS['bitrix24'];
-        $wh = new Webhook($b24c['domain'], 'abc');
+        $wh = new Webhook($b24c['domain'], $b24c['webhook']);
         $wh->method('someMethod', array());
     }
 
