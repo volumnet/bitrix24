@@ -13,7 +13,7 @@ composer require volumnet/bitrix24
  * @param string $domain Domain name, including protocol (i.e. https://domain.bitrix24.ru)
  * @param string $login Login name
  * @param string $password Password
- */ 
+ */
 $ql = new QuickLead('https://domain.bitrix24.ru', 'login', 'password');
 
 /**
